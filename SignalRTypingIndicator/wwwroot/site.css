@@ -1,0 +1,153 @@
+﻿:root {
+    --ok: #18a558;
+    --warn: #e11d48;
+    --chip: #e2f8ea;
+    --card: #fff;
+    --muted: #6b7280;
+    --bg: #f3f4f6;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif
+}
+
+h1 {
+    margin: 16px auto 0;
+    text-align: center
+}
+
+.sub {
+    color: var(--muted);
+    text-align: center;
+    margin: 4px 0 16px
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
+}
+
+.card {
+    background: var(--card);
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 78vh
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: .85rem;
+    color: #064e3b;
+    background: var(--chip);
+    border: 1px solid #bbf7d0
+}
+
+.room {
+    font-weight: 600
+}
+
+.danger {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #7f1d1d
+}
+
+input, button {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px
+}
+
+    input:disabled, button:disabled {
+        opacity: .6
+    }
+
+.grow {
+    flex: 1
+}
+
+.msgs {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    overflow: auto;
+    flex: 1
+}
+
+.msg {
+    margin: 6px 0;
+    display: flex;
+    gap: 8px;
+    align-items: flex-end
+}
+
+.bubble {
+    max-width: 75%;
+    padding: 8px 10px;
+    border-radius: 12px;
+    background: #f3f4f6
+}
+
+.me .bubble {
+    background: #dbeafe
+}
+
+.sys {
+    color: var(--muted);
+    font-size: .9rem
+}
+
+.foot {
+    margin-top: 10px
+}
+
+.typing {
+    min-height: 18px;
+    color: var(--muted);
+    font-size: .9rem;
+    margin: 4px 0 0 2px
+}
+
+.hdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+    .hdr .left {
+        display: flex;
+        align-items: center;
+        gap: 8px
+    }
+
+.joinbox input {
+    width: 160px
+}

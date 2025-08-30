@@ -1,0 +1,53 @@
+# Build outputs
+bin/
+obj/
+out/
+[Bb]uild[Ll]og*/
+[Ll]ogs/
+*.log
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.rsuser
+*.sln.docstates
+
+# IDEs
+.vscode/
+.idea/
+
+# Test / coverage
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage*/
+coverage*.json
+BenchmarkDotNet.Artifacts/
+
+# Publish profiles (keep launchSettings.json — do NOT ignore)
+*.pubxml
+*.publishproj
+
+# Local env/secrets (use User Secrets for dev)
+*.env
+*.env.*
+appsettings.*.local.json
+*.pfx
+*.p12
+
+# ReSharper / tools
+_ReSharper*/
+*.DotSettings.user
+NCrunch_*/ .NCrunch_* .*crunch*.local.xml
+
+# Optional frontend cache
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+appsettings.*.local.json

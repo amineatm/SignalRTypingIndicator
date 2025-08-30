@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Chat Room</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/site.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@9/dist/browser/signalr.min.js"></script>
+    <script defer src="/chat.js"></script>
+</head>
+<body>
+    <h1>Chat Room</h1>
+    <div class="wrap">
+        <div class="card">
+            <div class="hdr">
+                <div class="left">
+                    <span class="badge" data-status>Disconnected</span>
+                    <span class="room">Room: Chat Room</span>
+                </div>
+                <button data-leave class="danger" disabled>Leave</button>
+            </div>
+
+            <div class="row joinbox">
+                <input data-name placeholder="Your name" />
+                <button data-join>Join</button>
+            </div>
+
+            <div class="row" style="gap:16px;margin:8px 0">
+                <div style="min-width:220px">
+                    <div style="font-weight:600;margin-bottom:6px">Online</div>
+                    <ul data-users style="list-style:none;padding:0;margin:0;max-height:160px;overflow:auto"></ul>
+                </div>
+                <div class="msgs grow" data-msgs></div>
+            </div>
+
+            <div class="foot">
+                <div class="row">
+                    <input class="grow" data-input placeholder="Type your message..." disabled />
+                    <button data-send disabled>Send</button>
+                </div>
+                <div class="typing" data-typing></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
